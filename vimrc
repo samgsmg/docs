@@ -473,7 +473,11 @@ let g:ycm_collect_identifiers_from_tags_files=0
 
 " YCM 集成 OmniCppComplete 补全引擎，设置其快捷键
 inoremap <leader>; <C-x><C-o>
-
+inoremap ' ''<ESC>i
+inoremap " ""<ESC>i
+inoremap ( ()<ESC>i
+inoremap [ []<ESC>i
+inoremap { {<CR>}<ESC>O
 " 补全内容不以分割子窗口形式出现，只显示补全列表
 set completeopt-=preview
 
